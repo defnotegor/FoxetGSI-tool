@@ -19,6 +19,9 @@ rm -rf $1/priv-app/DiracAudioControlService
 rm -rf $1/app/DiracManager
 # Drop qcom location
 rm -rf $1/priv-app/com.qualcomm.location
+# Remove the selinux mapping shit mystic gavno
+rm -rf $1/system_ext/etc/selinux/mapping
+rm -rf $1/product/etc/selinux/mapping
 
 ## SELinux
 # Append file_context
